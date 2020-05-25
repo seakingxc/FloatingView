@@ -7,6 +7,7 @@ FloatingView By Kotlin
 
 用法：
 1、attach和detach
+
     override fun onStart() {
         super.onStart()
         Floater.instance.attach(this)
@@ -18,20 +19,22 @@ FloatingView By Kotlin
     }
     
 2、使用：可设置icon、mode不设置默认是可拖动模式、支持点击事件监听
-override fun onResume() {
-        super.onResume()
-        Floater.instance.icon(R.drawable.img_receiving_certificate)?.create()?.mode(ModeConstant.MODE_STALL)
-            ?.listener(object : IFloatingViewListener {
-                override fun onClick(floatingBaseView: FloatingBaseView) {
-                    Toast.makeText(this@MainActivity, "点我干嘛", Toast.LENGTH_SHORT).show()
-                }
-            })
-    }
+
+        override fun onResume() {
+                super.onResume()
+                Floater.instance.icon(R.drawable.img_receiving_certificate)?.create()?.mode(ModeConstant.MODE_STALL)
+                    ?.listener(object : IFloatingViewListener {
+                        override fun onClick(floatingBaseView: FloatingBaseView) {
+                            Toast.makeText(this@MainActivity, "点我干嘛", Toast.LENGTH_SHORT).show()
+                        }
+                    })
+            }
     
 3、如果是固定位置模式，支持在滑动监听中隐藏悬浮窗
- scrollView.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
-            if (scrollY > oldScrollY || scrollY < oldScrollY) {
-                //滚动
-                Floater.instance.hideToEdge()
-            }
-})
+
+         scrollView.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+                    if (scrollY > oldScrollY || scrollY < oldScrollY) {
+                        //滚动
+                        Floater.instance.hideToEdge()
+                    }
+        })
