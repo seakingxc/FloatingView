@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xc.floatingview.MainActivity"
+    android:id="@+id/scrollView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!\n
+Hello World!\n
+Helloorld!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+HelWorld!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello Wd!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Helo World!\n
+Hello World!\n
+Hellorld!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Helloorld!\n
+Hlo World!\n
+Hello World!\n
+Held!\n
+Hello World!\n
+Hello World!\n
+Hello orld!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hel World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello rld!\n
+Ho World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hel World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hellorld!\n
+Hello World!\n
+Hello World!\n
+HellWorld!\n
+Hello World!\n
+Hello World!\n
+Hello World!\n
+Hello World!"
+       />
+
+</androidx.core.widget.NestedScrollView>
