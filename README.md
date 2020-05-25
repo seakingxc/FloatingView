@@ -1,6 +1,6 @@
 # FloatingView
 FloatingView By Kotlin
-一个简单的悬浮框实现，由kotlin实现，无需申请各种系统权限。
+一个简单的全局悬浮框实现，由kotlin实现，无需申请各种系统权限。
 支持两种模式：
 
 1、可拖动：可随意拖动到屏幕任何地方，停下后自动吸附边缘
@@ -8,7 +8,7 @@ FloatingView By Kotlin
 2、固定位置，支持在边缘隐藏一半：不可拖动，固定在屏幕某个位置，支持页面滑动时，收起到边缘隐藏一半
 
 用法：
-1、attach和detach
+1、attach和detach （根据你的需求来设置，如果全局都需要，就在你的基类activity中设置）
 
     override fun onStart() {
         super.onStart()
